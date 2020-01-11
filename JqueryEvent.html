@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    alert("The paragraph was double-clicked.");
+  });
+});
+</script>
+<script> 
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("div").animate({
+              left: '250px',
+              opacity: '0.5',
+              height: '150px',
+              width: '150px'
+            });
+          });
+        });
+    </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        alert($("#w3s").attr("href"));
+      });
+    });
+    </script>
+</head>
+<body>
+
+<p>Double-click on this paragraph.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<button>Start Animation</button>
+
+<p>This is jquery Animation</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+<p><a href="http://52.172.33.254:8083/" id="w3s">chakri.com</a></p>
+
+<button>Show href Value</button>
+</body>
+</html>
